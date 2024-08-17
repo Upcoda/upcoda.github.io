@@ -12,27 +12,23 @@
             text-align: center;
             height: 100vh;
             overflow: hidden; /* Evita barras de desplazamiento si el contenido es grande */
-            position: relative;
         }
-        body::before {
-            content: "";
+        .background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('images/background.jpg') no-repeat center center fixed;
+            background: url('background.jpg') no-repeat center center;
             background-size: cover;
-            opacity: 0.5; /* Ajusta la opacidad seg√∫n tu preferencia */
-            z-index: -1; /* Env√≠a la capa al fondo */
+            z-index: -1; /* Asegura que el fondo estÈ detr·s del contenido */
         }
         .container {
+            position: relative;
             background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
             padding: 20px;
             border-radius: 10px;
-            display: inline-block; /* Ajusta el tama√±o del contenedor seg√∫n el contenido */
-            position: relative;
-            z-index: 1; /* Asegura que el contenido est√© sobre la imagen de fondo */
+            display: inline-block; /* Ajusta el tamaÒo del contenedor seg˙n el contenido */
         }
         .logo {
             max-width: 200px;
@@ -42,16 +38,17 @@
             color: white;
             text-decoration: none;
             font-size: 1.2em;
-            display: block; /* Cambiado a block para separaci√≥n vertical */
-            margin: 10px 0; /* A√±adido margen vertical */
-            transition: transform 0.3s ease; /* Transici√≥n suave para el cambio de tama√±o */
+            display: block; /* Cambiado a block para separaciÛn vertical */
+            margin: 10px 0; /* AÒadido margen vertical */
+            transition: transform 0.3s ease; /* TransiciÛn suave para el cambio de tamaÒo */
         }
         .social-links a:hover {
-            transform: scale(1.1); /* Agranda el texto al pasar el rat√≥n */
+            transform: scale(1.1); /* Agranda el texto al pasar el ratÛn */
         }
     </style>
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
         <img src="logo.png" alt="Logo de Upcoda" width="200">
         <div class="social-links">
