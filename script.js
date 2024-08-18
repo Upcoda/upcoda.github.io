@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const container=document.querySelector(".container");container.style.opacity=1});
