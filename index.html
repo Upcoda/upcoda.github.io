@@ -5,7 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoda</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, rgba(255,0,0,0.3), rgba(255,165,0,0.3), rgba(255,255,0,0.3), rgba(0,128,0,0.3), rgba(0,0,255,0.3), rgba(75,0,130,0.3), rgba(238,130,238,0.3)); /* Fondo con degradado arcoíris sutil */
+            background-size: 600% 600%;
+            animation: gradient 15s ease infinite; /* Animación de cambio de colores */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8); /* Fondo negro con más opacidad */
+            padding: 40px;
+            border-radius: 20px; /* Bordes más redondeados */
+            width: 100%;
+            max-width: 600px; /* Más compacto */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+            position: relative;
+            overflow: hidden; /* Para que los efectos no se salgan del contenedor */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrar el contenido horizontalmente */
+            justify-content: center; /* Centrar el contenido verticalmente */
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6)); /* Sombra sutil en el logo */
+        }
+
+        .logo:hover {
+            transform: scale(1.1); /* Agranda el logo al pasar el ratón */
+        }
+
+        .artist-name {
+            font-size: 2.5em;
+            font-weight: 900; /* Negrita extrema */
+            margin-bottom: 20px;
+            color: white; /* Mantener el color blanco */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre iconos */
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #4ca1af;
+            border-radius: 50%;
+            font-size: 1.5em;
+            text-decoration: none; /* Quitar subrayado */
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en los iconos */
+        }
+
+        .social-links a:hover {
+            background-color: #2c3e50; /* Cambio de color al pasar el ratón */
+            transform: translateY(-5px); /* Efecto de elevación */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+        }
+
+        .footer-text {
+            font-size: 0.8em;
+            color: #dfe6e9;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
