@@ -79,6 +79,27 @@
             text-decoration: none; /* Quitar subrayado */
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en los iconos */
+            background-size: cover; /* Ajustar el tamaño del logo */
+        }
+
+        .social-links a[href*="newgrounds.com"] {
+            background-image: url('newgrounds-logo.png'); /* Logo de Newgrounds */
+        }
+
+        .social-links a[href*="bandcamp.com"] {
+            background-image: url('bandcamp-logo.png'); /* Logo de Bandcamp */
+        }
+
+        .social-links a[href*="soundcloud.com"] {
+            background-image: url('soundcloud-logo.png'); /* Logo de SoundCloud */
+        }
+
+        .social-links a[href*="youtube.com"] {
+            background-image: url('youtube-logo.png'); /* Logo de YouTube */
+        }
+
+        .social-links a[href*="mailto:"] {
+            background-image: url('email-logo.png'); /* Logo de Email */
         }
 
         .social-links a:hover {
@@ -102,13 +123,13 @@
         <img src="logo.png" alt="Logo de Upcoda" class="logo">
         <div class="artist-name">UPCODA</div>
         <div class="social-links">
-            <a href="https://hesmusic.newgrounds.com/" target="_blank">NG</a>
-            <a href="https://upcoda.bandcamp.com/" target="_blank">BC</a>
-            <a href="https://soundcloud.com/up_coda" target="_blank">SC</a>
-            <a href="https://youtube.com/@Upcoda" target="_blank">YT</a>
-            <a href="mailto:upcoda.jonatan@gmail.com" target="_blank">?</a>
+            <a href="https://hesmusic.newgrounds.com/" target="_blank" aria-label="Newgrounds"></a>
+            <a href="https://upcoda.bandcamp.com/" target="_blank" aria-label="Bandcamp"></a>
+            <a href="https://soundcloud.com/up_coda" target="_blank" aria-label="SoundCloud"></a>
+            <a href="https://youtube.com/@Upcoda" target="_blank" aria-label="YouTube"></a>
+            <a href="mailto:upcoda.jonatan@gmail.com" target="_blank" aria-label="Email"></a>
         </div>
-        </div>
+        <div class="footer-text">© 2024 Upcoda</div>
     </div>
 </body>
 </html>
